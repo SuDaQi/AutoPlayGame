@@ -20,9 +20,10 @@ def mouseClick(img):
 
 
 #遍历图片并定位----------------
-
+flie = "1.png"
 img=('111.jpg-222.jpg-333.jpg')
 imgList=list(str(img).split('-'))
+print(imgList)
 def TotalLevelSeek(imgList):
     i=0
     while i<len(imgList):
