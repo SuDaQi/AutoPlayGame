@@ -8,24 +8,50 @@ import random
 def mouseClick(img):
     clickTimes=0.5
     offsetStrength=0.25
-    location = pyautogui.locateCenterOnScreen(img, confidence=0.9)
-    if location is not None:
+    imgPos = pyautogui.locateCenterOnScreen(img, confidence=0.9)
+    if imgPos is not None:
         size = pyautogui.locateOnScreen(img, confidence=0.9)
         offset = (int(size[2] * offsetStrength), int(size[3] * offsetStrength))
-        pyautogui.click(random.randint(location.x - offset[0], location.x + offset[0]),
-                        random.randint(location.y - offset[1], location.y + offset[1]), clicks=clickTimes, interval=0.2,
-                        duration=0.2, button="left")
-    print("未找到匹配图片,0.1秒后重试")
+        pyautogui.click(random.randint(imgPos.x - offset[0], imgPos.x + offset[0]),
+                        random.randint(imgPos.y - offset[1], imgPos.y + offset[1]),
+                        clicks=clickTimes, interval=0.2,duration=0.2, button="left")
+    print("定位错误")
     time.sleep(0.5)
 
 
-#遍历图片----------------
+#遍历图片并定位----------------
+
 img=('111.jpg-222.jpg-333.jpg')
 imgList=list(str(img).split('-'))
-i=0
-while i<len(imgList):
-    mouseClick(img[i])
-    print(i)
-    i+=1
+def TotalLevelSeek(imgList):
+    i=0
+    while i<len(imgList):
+        img = pyautogui.locateCenterOnScreen(imgList[i], confidence=0.9)
+        if img is not True:
+            return True
+        i+=1
+        return False
 #-----------------------
+#逻辑定位
+def TotalLevelSeek(imgNumTotal):
+    i=0
+    Leve=0
+    while i<imgNumTotal+1:
+        imgPos=pyautogui.locateCenterOnScreen(imgList,confidence=0.9)
+        if imgPos is not None:
+            Leve=1
+            print(f"当前游戏的进度,{i},{Leve}.")
+            break
+        i+=1
+        if i==imgNumTotal:
+            print(f"没有监测到游戏窗口,{i},{Leve}.")
+
+def LocationLevelSeek(imgNumLocation):
+
+    pass
+
+def GameGoOn(Level):
+
+    pass
+
 
