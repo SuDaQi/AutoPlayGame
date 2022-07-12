@@ -20,10 +20,13 @@ def mouseClick(img):
 
 
 #遍历图片并定位----------------
-flie = "1.png"
+flie = '1.xls'
+steel = xlrd.open_workbook(filename=flie).sheet_by_index(0)
+
 img=('111.jpg-222.jpg-333.jpg')
 imgList=list(str(img).split('-'))
-print(imgList)
+a= pyautogui.locateCenterOnScreen(imgList[1], confidence=0.9)
+print(a)
 def TotalLevelSeek(imgList):
     i=0
     while i<len(imgList):
