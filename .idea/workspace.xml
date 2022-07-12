@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2a54130c-fe2e-47c0-8a9f-dac8e3183f0b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,14 +13,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2Bn9rpCYb9arMVb35zt9MKpOzjf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "vcs.Git"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Documents\GitHub\AiPcUser\AiPcUser" />
@@ -65,6 +73,7 @@
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
+<<<<<<< HEAD
   <component name="WindowStateProjectService">
     <state width="2056" height="244" key="GridCell.Tab.0.bottom" timestamp="1657637971147">
       <screen x="0" y="0" width="2318" height="1265" />
@@ -83,4 +92,6 @@
     </state>
     <state width="2056" height="244" key="GridCell.Tab.0.right/0.0.2318.1265@0.0.2318.1265" timestamp="1657637971147" />
   </component>
+=======
+>>>>>>> d07ff3595798310f4bbcdb3f935a621dae497b9e
 </project>
