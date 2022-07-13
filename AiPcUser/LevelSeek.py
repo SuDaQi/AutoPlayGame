@@ -13,10 +13,10 @@ def SoloLevelSeek(sheet1,Level):
         img = pyautogui.locateCenterOnScreen(imgList[i], confidence=0.9)
         if img is not None:
             print(f"捕捉到当前游戏的进度,{Level}级第{i+1}步.{img}")
-            return True
+            return [True,i]
 
         i += 1
         if i == len(imgList)-1 and img is None:
             print(f"没有监测到游戏窗口,停止在{Level}级第{i+1}步.")
-            return False
+            return [False,i]
 
