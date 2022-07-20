@@ -1,11 +1,12 @@
-# AiPcUser
-Maybe it can help you play games.
+白嫖党集合，免费开源
 
-Development phase...
+PC端控制鼠标自动肝游戏
 
-Recommended version:Python 3.9
+目前测试阴阳师肝副本半自动可行
 
-install————————————————————————————
+建议版本Python：3.9
+
+install————————————————————————————依赖库
 
         pip install pyperclip
         
